@@ -1,1 +1,11 @@
 // Add any font imports or definitions here
+@font-face {
+  font-family: 'DIN Next LT Arabic';
+  src: url('https://futurex-edxapp-production.s3.eu-west-1.amazonaws.com/certificate_template_assets/11/din-next-lt-arabic-bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --pgn-typography-font-family-base: 'DIN Next LT Arabic',var(--pgn-typography-font-family-sans-serif) !important;
+}
