@@ -3,3 +3,7 @@
 
 @import "~@edx/paragon/styles/css/themes/light/variables";
 @import "~@edx/paragon/styles/css/themes/light/utility-classes";
+
+.pgn__form-radio-input {
+  border-radius: var(--pgn-size-form-control-border-radio-indicator-radius) !important;
+}
