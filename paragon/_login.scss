@@ -1,0 +1,386 @@
+// login page styling
+#root {
+  .extra-large-screen-top-stripe,
+  .medium-screen-top-stripe,
+  .col-md-2.bg-white,
+  .extra-large-screen-top-stripe,
+  .small-screen-top-stripe {
+    display: none !important;
+  }
+  .layout {
+    padding: 10px;
+
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    @media only screen and (min-width: 556px) {
+      padding: 20px;
+    }
+    .col-md-3.bg-white {
+      display: none;
+    }
+    .bg-primary-400 {
+      background: none !important;
+      flex: 0 0 100%;
+      max-width: 100%;
+      display: block;
+      .min-vh-100 {
+        min-height: calc(100vh - 100px) !important;
+        display: flex !important;
+        @media screen and (max-width: 1200px) {
+          min-height: 20px !important;
+          display: block !important;
+        }
+      }
+      h1 {
+        margin: 0 auto !important;
+        max-width: 564px !important;
+        font-size: 32px;
+        line-height: 40px;
+        color: $primary !important;
+        padding: 50px 0;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        font-weight: 400;
+        @media only screen and (min-width: 556px) {
+          font-size: 52px;
+          line-height: 78px;
+        }
+        @media screen and (max-width: 1200px) {
+          padding: 0;
+        }
+        .text-accent-a {
+          font-weight: 400;
+          font-size: 34px;
+          line-height: 40px;
+          color: $primary !important;
+          display: block !important;
+          font-weight: 900;
+          @media only screen and (min-width: 556px) {
+            font-size: 64px;
+            line-height: 74px;
+          }
+        }
+      }
+    }
+    .content {
+      background: #fff;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      box-shadow: 0px -24px 50px 0px #fafafa;
+      padding: 30px 10px;
+      border: 1px solid #eee;
+      height: max-content;
+      max-width: 100%;
+      border-radius: 20px;
+
+      .nav.nav-tabs {
+        border-bottom: 1px solid #d3d3d3;
+        display: flex;
+        height: 51px;
+        width: 100%;
+        margin-bottom: 20px;
+        .nav-link {
+          color: $text-color;
+          border-bottom: 2px solid transparent;
+          padding: 10px;
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 500;
+          height: 50px;
+          margin: 0 10px;
+          flex-shrink: 0;
+          &.active,
+          &:hover {
+            color: $text-color;
+            background: transparent;
+            border: 0;
+            border-bottom: 3px solid $primary;
+            outline: unset;
+          }
+          &:focus {
+            &::before {
+              border: 0;
+              outline: 0 !important;
+            }
+          }
+          &.pgn__tab_more {
+            display: contents;
+            button {
+              border-radius: none !important;
+            }
+          }
+          img {
+            width: 50px;
+          }
+        }
+        @media only screen and (min-width: 556px) {
+          height: 61px;
+          margin-bottom: 30px;
+          .nav-link {
+            padding: 16px 12px;
+            font-size: 24px;
+            line-height: 30px;
+            height: 60px;
+            margin: 0 25px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      #main-content {
+        min-width: 100px !important;
+        padding: 0 !important;
+        > .mw-xs {
+          min-width: 100px !important;
+          max-width: 450px !important;
+          margin: 0 auto !important;
+        }
+        .alert-danger {
+          border-radius: 6px;
+          background: #fef2f2;
+          padding: 16px;
+          color: $danger;
+          font-size: 14px;
+          line-height: 20px;
+          box-shadow: none;
+          .alert-heading {
+            color: $danger;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+          }
+        }
+        .pgn__form-control-decorator-group {
+          margin-inline-end: 0;
+        }
+        #forgot-password {
+          font-size: 14px;
+          color: $text-color !important;
+        }
+        .btn-brand {
+          background-color: $primary;
+          border-color: $primary;
+          line-height: 20px;
+          font-size: 16px;
+          font-weight: 500;
+          height: 40px;
+          border-radius: 5px;
+          margin-bottom: 0 !important;
+          &:hover {
+            background-color: $primary-hover;
+            border-color: $primary-hover;
+          }
+        }
+        @media only screen and (min-width: 556px) {
+          .btn-brand {
+            font-size: 20px;
+            line-height: 30px;
+            height: 65px;
+            border-radius: 16px;
+          }
+        }
+      }
+      .auth_logo_wrap {
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        @media only screen and (min-width: 556px) {
+          margin-bottom: 40px;
+        }
+      }
+      .logo {
+        width: auto !important;
+        margin: 0;
+        height: 25px;
+        @media only screen and (min-width: 556px) {
+          height: 30px;
+        }
+        @media only screen and (min-width: 1800px) {
+          height: 50px;
+        }
+      }
+      .auth_action_wrap {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+      }
+      @media only screen and (min-width: 556px) {
+        padding: 50px;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      @media only screen and (min-width: 1800px) {
+        padding: 80px;
+      }
+    }
+    .auth_inner_wrap {
+      #sign-in-form {
+        .login-button-width.btn.btn-brand {
+          color: #fff !important;
+        }
+      }
+      #registration-form {
+        .register-button.btn.btn-brand {
+          color: #fff !important;
+        }
+      }
+
+      .pgn {
+        &-transition-replace-group {
+          display: none !important;
+        }
+        &__form-group {
+          margin-bottom: 24px;
+        }
+        &__form-control {
+          &-decorator {
+            &-group {
+              margin: 0;
+            }
+            &-trailing {
+              height: 40px;
+              padding-inline-end: calc(12px - 0px);
+              @media only screen and (min-width: 556px) {
+                height: 65px;
+              }
+            }
+            .btn-icon__icon-container {
+              width: 30px !important;
+              height: 30px !important;
+              .pgn__icon.btn-icon__icon {
+                width: 30px !important;
+                height: 30px !important;
+                display: flex;
+              }
+            }
+            .btn-icon {
+              width: 30px !important;
+              height: 30px !important;
+              &:focus {
+                box-shadow: none !important;
+                border: 0 !important;
+                outline: 0 !important;
+              }
+              &:hover {
+                background-color: $primary !important;
+                img {
+                  filter: invert(1);
+                }
+              }
+            }
+          }
+
+          &-floating-label {
+            padding: 0 20px;
+            align-items: center;
+            &-content {
+              font-size: 16px !important;
+              line-height: 20px;
+              inset-inline-start: 0;
+              padding-top: 0;
+            }
+            &-text {
+              color: $text-color;
+              font-weight: 500;
+              padding: 0;
+              margin-bottom: 0;
+              font-size: 16px;
+              line-height: 20px;
+
+              @media only screen and (min-width: 556px) {
+                font-size: 20px;
+                line-height: 24px;
+              }
+            }
+          }
+        }
+      }
+      input.form-control {
+        border-radius: 5px;
+        border: 1px solid #d3d3d3;
+        height: 40px;
+        line-height: 20px;
+        font-size: 16px;
+        padding: 0 10px;
+        color: $text-color;
+        &:focus {
+          box-shadow: unset;
+          border: 1px solid #1d1d1f;
+          background-color: transparent !important;
+          ~ .pgn__form-control-floating-label
+            .pgn__form-control-floating-label-text,
+          .form-control.has-value
+            ~ .pgn__form-control-floating-label
+            .pgn__form-control-floating-label-text {
+            transform: translateY(-8px) scale(0.75) translateY(-80.0007500188%);
+            padding: 0 5px;
+            font-size: 16px;
+            @media only screen and (min-width: 556px) {
+              font-size: 26px;
+              padding: 0 10px;
+              transform: translateY(-15px) scale(0.75)
+                translateY(-80.0007500188%);
+            }
+          }
+        }
+        &:hover {
+          background-color: transparent !important;
+        }
+        &.has-value
+          ~ .pgn__form-control-floating-label
+          .pgn__form-control-floating-label-text {
+          padding: 0 10px;
+          font-size: 26px;
+          transform: translateY(-15px) scale(0.75) translateY(-80.0007500188%);
+        }
+        &::placeholder {
+          color: #575757;
+        }
+        @media only screen and (min-width: 556px) {
+          border-radius: 16px;
+          height: 65px;
+          line-height: 24px;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}
+
+.pp-page-content {
+  margin: 0 !important;
+  .btn.btn-brand {
+    color: #ffffff !important;
+    background-color: #4600c7 !important;
+    border-color: #4600c7 !important;
+    margin-right: 20px !important;
+    &:hover {
+      background-color: #6a32d1 !important;
+      border-color: #6a32d1 !important;
+    }
+    &:dir(rtl) {
+      margin-right: unset !important;
+      margin-left: 20px !important;
+    }
+  }
+}
+body.indigo-dark-theme #root .layout {
+  .auth_inner_wrap input.form-control {
+    &:focus {
+      border: 1px solid #fff !important;
+    }
+  }
+  #forgot-password {
+    background-color: transparent !important;
+  }
+}
