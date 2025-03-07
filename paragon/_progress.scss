@@ -198,18 +198,21 @@ a.muted-link {
 .btn-icon {
   width: 24px !important;
   height: 24px !important;
-  &:hover {
-    background-color: $primary !important;
-    color: white;
-    .btn-icon__icon {
-      svg {
-        path {
-          stroke: $primary !important;
-          fill: white !important;
+  &.btn-icon-primary{
+    &:hover {
+      background-color: $concrete !important;
+      color: white;
+      .btn-icon__icon {
+        svg {
+          path {
+            stroke: $primary !important;
+            fill: $primary !important;
+          }
         }
       }
     }
   }
+
 }
 .btn-icon__icon {
   svg {

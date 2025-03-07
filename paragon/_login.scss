@@ -1,165 +1,274 @@
 // login page styling
 #root {
-    .extra-large-screen-top-stripe, .medium-screen-top-stripe, .col-md-2.bg-white, .extra-large-screen-top-stripe, .small-screen-top-stripe {
-        display: none !important;
+  .extra-large-screen-top-stripe,
+  .medium-screen-top-stripe,
+  .col-md-2.bg-white,
+  .extra-large-screen-top-stripe,
+  .small-screen-top-stripe {
+    display: none !important;
+  }
+  .layout {
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    // @media only screen and (min-width:556px) {
+    //   padding: 50px;
+    // }
+    .col-md-3.bg-white {
+      display: none;
     }
-    .layout {
-        min-height: 100vh;
-        background: $primary-light;
-        padding: 20px;
-        overflow: hidden;
+    .bg-primary-400 {
+      background: none !important;
+      flex: 0 0 100%;
+      max-width: 100%;
+      display: block;
+      .min-vh-100 {
+        min-height: calc(100vh - 100px) !important;
+        display: flex !important;
+        @media screen and (max-width: 1200px) {
+          min-height: 20px !important;
+          display: block !important;
+        }
+      }
+      h1 {
+        margin: 0 auto !important;
+        max-width: 564px !important;
+        font-size: 32px;
+        line-height: 40px;
+        color: $primary !important;
+        padding: 50px 0;
         position: relative;
-        @include media-breakpoint-up(sm) {
-            padding: 50px;
+        z-index: 1;
+        width: 100%;
+        font-weight: 400;
+        // @media only screen and (min-width:556px) {
+        //   font-size: 52px;
+        //   line-height: 78px;
+        // }
+        // @media screen and (max-width: 1200px) {
+        //   padding: 0;
+        // }
+        .text-accent-a {
+          font-weight: 400;
+          font-size: 34px;
+          line-height: 40px;
+          color: $primary !important;
+          display: block !important;
+          font-weight: 900;
+        //   @media only screen and (min-width:556px) {
+        //     font-size: 64px;
+        //     line-height: 74px;
+        //   }
         }
-        &:after, &:before {
-            position: absolute;
-            left: -400px;
-            bottom: -400px;
-            content: "";
-            width: 400px;
-            height: 400px;
-            border-radius: 50%;
-            box-shadow: 400px -400px 143px 90px rgba(122, 185, 250, 0.45);
-            display: none;
-            @include media-breakpoint-up(sm) {
-                display: block;
+      }
+    }
+    .content {
+      background: #fff;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      box-shadow: 0px -24px 50px 0px #fafafa;
+      border-radius: 42px;
+      padding: 30px;
+      border: 1px solid #eee;
+      height: max-content;
+      max-width: 600px;
+    //   @media only screen and (min-width:556px) {
+    //     padding: 80px;
+    //     width: 100%;
+    //     max-width: 600px;
+    //     margin: 0 auto;
+    //   }
+
+      .nav.nav-tabs {
+        gap: 60px;
+        border-bottom: 1px solid #d3d3d3;
+        margin-bottom: 42px;
+        .nav-link {
+          color: $text-color;
+          border-bottom: 2px solid transparent;
+          padding: 16px 12px;
+          font-size: 24px;
+          line-height: 30px;
+          font-weight: 500;
+          &.active,
+          &:hover,
+          &:focus {
+            color: $text-color;
+            background: transparent;
+            border: 0;
+            border-bottom: 2px solid $primary;
+            outline: unset;
+          }
+          &:focus {
+            &::before {
+              border: 0;
+              outline: 1px dotted $primary;
+              outline-offset: 1px;
+              border-radius: 4px;
             }
+          }
         }
-        &:before {
-            right: 400px;
-            top: -400px;
-            left: auto;
-            bottom: auto;
-            box-shadow: 400px 400px 143px 90px rgba(122, 185, 250, 0.45);
+      }
+      #main-content {
+        min-width: 100px !important;
+        padding-top: 0 !important;
+        > .mw-xs {
+          min-width: 100px !important;
+          max-width: 450px !important;
+          margin: 0 auto !important;
         }
-        .col-md-3.bg-white {
-            display: none;
+        .alert-danger {
+          border-radius: 6px;
+          background: #fef2f2;
+          padding: 16px;
+          color: $danger;
+          font-size: 14px;
+          line-height: 20px;
+          box-shadow: none;
+          .alert-heading {
+            color: $danger;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+          }
         }
-        .pgn__hyperlink.default-link.standalone-link {
-            display: none;
+        .pgn__form-control-decorator-group {
+          margin-inline-end: 0;
         }
-        .bg-primary-400 {
-            background: none !important;
-            flex: 0 0 100%;
-            max-width: 100%;
-            display: block;
-            .min-vh-100 {
-                min-height: calc(100vh - 100px) !important;
-                display: flex !important;
-                @media screen and (max-width: 1200px) {
-                    min-height: 20px !important;
-                    display: block !important;
-                }
-            }
-            h1 {
-                margin: 0 auto !important;
-                max-width: 564px !important;
-                font-size: 32px;
-                line-height: 40px;
-                color: $primary !important;
-                padding: 50px 0;
-                position: relative;
-                z-index: 1;
-                width: 100%;
-                font-weight: 400;
-                @include media-breakpoint-up(sm) {
-                    font-size: 52px;
-                    line-height: 78px;
-                }
-                @media screen and (max-width: 1200px) {
-                    padding: 0;
-                }
-                .text-accent-a {
-                    font-weight: 400;
-                    font-size: 34px;
-                    line-height: 40px;
-                    color: $primary !important;
-                    display: block !important;
-                    font-weight: 900;
-                    @include media-breakpoint-up(sm) {
-                        font-size: 64px;
-                        line-height: 74px;
-                    }
-                }
-            }
+        #forgot-password {
+          font-size: 14px;
+          color: $text-color;
+          font-weight: 500;
         }
-        .content {
-            background: #fff;
-            border-radius: 20px 0px;
-            padding: 20px;
-            margin: 0;
-            position: relative;
-            z-index: 1;
-            display: block;
-            @include media-breakpoint-up(sm) {
-                padding: 50px;
-                border-radius: 50px 0px;
-            }
-            @media screen and (max-width: 1200px) {
-                margin: 0 auto;
-                width: 100%;
-                max-width: 564px;
-            }
-            .nav.nav-tabs {
-                border-bottom: 1px solid #E5E7EB;
-                max-width: 450px;
-                margin: 0 auto;
-                a {
-                    font-size: 14px;
-                    line-height: 20px;
-                    font-weight: 500;
-                    padding: 0 0 16px;
-                    margin: 0 32px -1px 0;
-                    color: $text-color-primary;
-                    background: none !important;
-                    &:before {
-                        display: none;
-                    }
-                    &.active, &:hover {
-                        color: $primary;
-                        border-bottom: 2px solid $primary;
-                    }
-                }
-            }
-            #main-content {
-                min-width: 100px !important;
-                padding: 20px 0 0 !important;
-                > .mw-xs {
-                    min-width: 100px !important;
-                    max-width:450px !important;
-                    margin: 0 auto !important;
-                }
-                .alert-danger {
-                    border-radius: 6px;
-                    background: #FEF2F2;
-                    padding: 16px;
-                    color: #B91C1C;
-                    font-size: 14px;
-                    line-height: 20px;
-                    box-shadow: none;
-                    .alert-heading {
-                        color: #B91C1C;
-                        font-size: 14px;
-                        line-height: 20px;
-                        font-weight: 500;
-                    }
-                }
-                .pgn__form-control-decorator-group {
-                    margin-inline-end: 0;
-                }
-                #forgot-password {
-                    font-weight: 400 !important;
-                    font-size: 14px;
-                }
-                .btn-brand {
-                    background-color: $primary;
-                    border-color: $primary;
-                    font-size: 14px;
-                    font-weight: 500;
-                    line-height: 30px;
-                }
-            }
+        .btn-brand {
+          background-color: $primary;
+          border-color: $primary;
+          line-height: 30px;
+          border-radius: 16px;
+          font-size: 16px;
+          font-weight: 500;
+          height: 65px;
+        //   @media only screen and (min-width:556px) {
+        //     font-size: 20px;
+        //     height: 65px;
+        //   }
         }
-     }
+      }
+      .auth_logo_wrap {
+        margin-bottom: 60px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+      .logo {
+        width: auto !important;
+        margin: 0;
+        height: 35px;
+        // @media only screen and (min-width:556px) {
+        //   height: 60px;
+        // }
+      }
+      .auth_action_wrap {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+      }
+    }
+    .auth_inner_wrap {
+      .pgn {
+        &-transition-replace-group {
+          display: none !important;
+        }
+        &__form-group {
+          margin-bottom: 24px;
+        }
+        &__form-control {
+          &-decorator {
+            &-group {
+              margin: 0;
+            }
+            &-trailing {
+              height: 65px;
+              padding-inline-end: calc(12px - 0px);
+            //   @media only screen and (min-width:556px) {
+            //     height: 65px;
+            //   }
+            }
+            .btn-icon {
+              &:hover {
+                background-color: $primary !important;
+              }
+            }
+          }
+
+          &-floating-label {
+            padding: 0 20px;
+            align-items: center;
+            &-content {
+              font-size: 16px !important;
+              line-height: 20px;
+              inset-inline-start: 0;
+              padding-top: 0;
+
+            //   @media only screen and (min-width:556px) {
+            //     font-size: 20px !important;
+            //     line-height: 24px;
+            //   }
+            }
+            &-text {
+              color: $text-color;
+              font-weight: 500;
+              padding: 0;
+              margin-bottom: 0;
+              font-size: 20px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+      input.form-control {
+        border-radius: 16px;
+        border: 1px solid #d3d3d3;
+        height: 65px;
+        line-height: 24px;
+        font-size: 16px;
+        padding: 0 20px;
+        color: $text-color;
+        &:focus {
+          box-shadow: unset;
+          border: 1px solid #1d1d1f;
+          ~ .pgn__form-control-floating-label
+            .pgn__form-control-floating-label-text,
+          .form-control.has-value
+            ~ .pgn__form-control-floating-label
+            .pgn__form-control-floating-label-text {
+            transform: translateY(-15px) scale(0.75) translateY(-80.0007500188%);
+            padding: 0 10px;
+            font-size: 26px;
+          }
+        }
+        &:hover{
+            background-color: transparent !important;
+        }
+        &.has-value
+          ~ .pgn__form-control-floating-label
+          .pgn__form-control-floating-label-text {
+          padding: 0 10px;
+          font-size: 26px;
+
+          transform: translateY(-15px) scale(0.75) translateY(-80.0007500188%);
+        }
+        &::placeholder{
+            color: #575757;
+        }
+        // @media only screen and (min-width:556px) {
+        //   height: 65px;
+        //   font-size: 20px;
+        // }
+      }
+    }
+  }
 }

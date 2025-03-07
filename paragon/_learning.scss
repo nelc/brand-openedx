@@ -363,11 +363,11 @@ div[data-learner-type="b2c_learner"] {
 }
 .collapsible-icon {
   margin-inline-start: 0;
-  button {
-    color: #4600c7 !important;
+  .btn-icon.btn-icon-primary {
+    color: $primary !important;
     &:hover {
-      background-color: #4600c7 !important;
-      color: #fff !important;
+      background-color: $primary !important;
+      color: white !important;
     }
   }
 }

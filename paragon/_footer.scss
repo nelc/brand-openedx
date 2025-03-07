@@ -387,7 +387,7 @@ footer.tutor-container {
               width: 20px;
               border: 1px solid #c4c7cf;
               &:checked {
-                border-color: #15376d;
+                border-color: $text-color;
               }
             }
             input[type="checkbox"] {

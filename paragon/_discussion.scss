@@ -254,29 +254,31 @@ html[data-mce-style] {
 }
 
 .post-summary-comment-count-dimensions {
-  width: 24px !important;
-  height: 24px !important;
-  display: flex;
-  align-items: center;
-  padding: 3px !important;
-  svg {
-    color: $text-color;
-    width: 22px;
-    height: 22px;
-
-    path {
-      stroke: $text-color !important;
-    }
-  }
-  &:hover {
-    background: #f0eeed !important;
-    border-radius: 100px;
+  &.d-flex.align-items-center {
+    width: 24px !important;
+    height: 24px !important;
+    display: flex;
+    align-items: center;
+    padding: 3px !important;
     svg {
-      color: $primary;
+      color: $text-color;
       width: 22px;
       height: 22px;
+
       path {
-        stroke: $primary !important;
+        stroke: $text-color !important;
+      }
+    }
+    &:hover {
+      background: #f0eeed !important;
+      border-radius: 100px;
+      svg {
+        color: $primary;
+        width: 22px;
+        height: 22px;
+        path {
+          stroke: $primary !important;
+        }
       }
     }
   }
@@ -412,13 +414,14 @@ input {
     height: 36px !important;
     &:hover {
       background-color: transparent !important;
-      .like-icon-dimensions, .follow-icon-dimensions, .dropdown-icon-dimensions{
+      .like-icon-dimensions,
+      .follow-icon-dimensions,
+      .dropdown-icon-dimensions {
         &.btn-icon__icon svg path {
           stroke: $primary !important;
           fill: $primary !important;
         }
       }
-   
     }
   }
 }

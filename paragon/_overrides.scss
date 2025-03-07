@@ -31,7 +31,7 @@ html {
     flex: 0 0 100% !important;
     padding: 9px 13px !important;
     margin: 20px 0 0 !important;
-    background: $primary-light;
+    background: $concrete;
     border-radius: 6px 6px 0px 0px;
     @media only screen and (max-width: 576px) {
       margin: 0 !important;
@@ -40,8 +40,9 @@ html {
       li {
         font-size: 14px;
         line-height: 20px;
+        cursor: pointer;
         a {
-          color: $text-color-primary !important;
+          color: $text-color !important;
           font-weight: 500;
         }
         button {
@@ -333,7 +334,7 @@ html {
     }
   }
   .sequence-container {
-    width: 100%;
+    width: 100% !important;
     .sequence {
       border-top: none;
       border-radius: 0 0 6px 6px;
@@ -364,15 +365,79 @@ html {
             }
           }
         }
+        .previous-btn {
+          color: $text-color !important;
+          &:hover {
+            background-color: transparent !important;
+            text-decoration: underline !important;
+          }
+          &:focus {
+            &::before {
+              content: unset !important;
+            }
+          }
+        }
+        .next-btn {
+          color: $text-color !important;
+          &:hover {
+            background-color: transparent !important;
+            text-decoration: underline !important;
+          }
+          &:focus {
+            &::before {
+              content: unset;
+            }
+          }
+        }
       }
       .unit-navigation {
         max-width: 226px;
+        .previous-button,
+        .next-button {
+          flex-basis: 110px;
+          color: $text-color;
+          border-color: #1d1d1f;
+          cursor: pointer;
+          &:hover {
+            background-color: transparent !important;
+            text-decoration: underline !important;
+          }
+          &:focus {
+            &::before {
+              content: unset;
+            }
+          }
+          @include media-breakpoint-down(sm) {
+            flex-basis: auto !important;
+          }
+        }
         button,
         a {
           svg {
             display: none;
           }
         }
+      }
+      .sequence-navigation {
+        .btn {
+          &.active {
+            color: $text-color !important;
+            &:after {
+              background-color: $primary !important;
+            }
+          }
+        }
+      }
+      .wrap-instructor-info {
+        a {
+          &.instructor-info-action {
+            background-color: $primary !important;
+          }
+        }
+      }
+      input[type="checkbox"],
+      input[type="radio"] {
+        accent-color: $text-color !important;
       }
     }
   }
@@ -469,7 +534,7 @@ html {
         width: 20px;
         border: 1px solid #c4c7cf;
         &:checked {
-          border-color: #15376d;
+          border-color: $text-color;
         }
       }
       input[type="checkbox"] {
@@ -479,8 +544,158 @@ html {
   }
 }
 
+ol.d-flex.list-unstyled.flex-nowrap.align-items-center.m-0 {
+  .li.list-unstyled.col-auto.m-0.p-0 {
+    a {
+      color: $text-color;
+    }
+  }
+  .col-auto.p-0.mx-2.dark-black-color {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-self: center;
+    line-height: 0;
+    font-size: 45px;
+    justify-content: center;
+    margin-top: -5px;
+  }
+}
+button.btn-icon.btn-icon-primary.btn-icon-sm {
+  &:hover {
+    .btn-icon__icon-container {
+      .span.pgn__icon.btn-icon__icon {
+        svg {
+          path {
+            fill: $primary !important;
+          }
+        }
+      }
+    }
+  }
+}
+.btn-primary {
+  background-color: $primary !important;
+  border-color: $primary !important;
+  color: #fff;
+  &:hover {
+    background-color: $primary-hover !important;
+    border-color: $primary-hover !important;
+  }
+}
 
+// studio style
 
+.studio-header + .px-4.container-mw-xl.container-fluid {
+  section.course-outline-container.mb-4.mt-5 {
+    .alert-info {
+      background-color: $concrete;
+      border-color: $concrete;
+      box-shadow: none !important;
+    }
+  }
+}
+
+.section-card__content {
+  .outline-section__status.mb-1 {
+    button {
+      .pgn__bubble.pgn__bubble-primary {
+        background-color: $text-color !important;
+      }
+    }
+  }
+}
+
+.course-outline-section {
+  .pt-4 {
+    .mx-0.row {
+      background: #fbfbfb !important;
+      box-shadow: none !important;
+      border: 1px solid $concrete;
+    }
+  }
+}
+
+.section-card__subsections.item-children {
+  .mx-0.row {
+    background: #fff !important;
+    box-shadow: none !important;
+    border: 1px solid $concrete;
+  }
+  button.mt-4.btn.btn-outline-primary.btn-block {
+    color: #111827;
+    border: 1px solid #111827;
+    &:hover {
+      background-color: #eeeeee;
+    }
+  }
+}
+.course-outline-section {
+  .pt-4 {
+    button.mt-4.btn.btn-outline-primary.btn-block {
+      color: #111827;
+      border: 1px solid #111827;
+      &:hover {
+        background-color: #eeeeee;
+      }
+    }
+  }
+}
+
+.extend-margin .item-children {
+  margin-right: -1.75rem !important;
+  &:dir(rtl) {
+    margin-right: unset;
+    margin-left: -1.75rem !important;
+  }
+}
+
+button.btn-icon.btn-icon-secondary.btn-icon-md,
+.item-card-header:hover .item-card-edit-icon {
+  svg {
+    path {
+      fill: $text-color !important;
+    }
+  }
+  &:hover {
+    background-color: $concrete !important;
+    svg {
+      path {
+        fill: $primary !important;
+      }
+    }
+  }
+}
+
+// Schedule & Detail design
+
+.schedule-and-details {
+  button.btn.btn-outline-primary {
+    color: #111827 !important;
+    border: 1px solid #111827 !important;
+    &:hover {
+      background-color: #eeeeee !important;
+    }
+  }
+  .form-group-custom .dropdown-toggle {
+    color: #111827 !important;
+    border: 1px solid #111827 !important;
+    &:hover,
+    &:focus {
+      background-color: #f3f3f3 !important;
+    }
+  }
+}
+.m-0.mt-6.row.align-items-center.justify-content-center {
+  button.btn.btn-outline-primary.btn-sm {
+    color: #111827 !important;
+    border: 1px solid #111827 !important;
+    &:hover,
+    &:focus {
+      background-color: #f3f3f3 !important;
+    }
+  }
+}
 
 @import "./header";
 @import "./footer";
