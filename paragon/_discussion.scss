@@ -254,33 +254,22 @@ html[data-mce-style] {
 }
 
 .post-summary-comment-count-dimensions {
-  &.d-flex.align-items-center {
-    width: 24px !important;
-    height: 24px !important;
-    display: flex;
-    align-items: center;
-    padding: 3px !important;
-    svg {
-      color: $text-color;
-      width: 22px;
-      height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  width: 24px !important;
+  height: 24px !important;
+  img {
+    width: 18px !important;
+  }
+  &:hover {
+    background: #f0eeed !important;
+    padding: 5px !important;
+    img{
+      filter: brightness(0.5);
+    }
 
-      path {
-        stroke: $text-color !important;
-      }
-    }
-    &:hover {
-      background: #f0eeed !important;
-      border-radius: 100px;
-      svg {
-        color: $primary;
-        width: 22px;
-        height: 22px;
-        path {
-          stroke: $primary !important;
-        }
-      }
-    }
   }
 }
 
@@ -292,7 +281,7 @@ html[data-mce-style] {
     padding: 5px;
     height: 24px !important;
   }
-  svg {
+  svg, img {
     color: $text-color;
     path {
       stroke: $text-color !important;
@@ -301,7 +290,7 @@ html[data-mce-style] {
   &:hover {
     background: #f0eeed !important;
     padding: 5px !important;
-    svg {
+    svg, img {
       color: $primary;
       path {
         stroke: $primary !important;
@@ -369,7 +358,7 @@ input {
   }
   .d-flex.justify-content-end {
     .btn.btn-outline-primary {
-      color: #374151 !important;
+      color: $light-dark !important;
       border-color: #d1d5db !important;
       &:hover {
         background-color: $concrete !important;

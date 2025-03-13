@@ -16,9 +16,7 @@
     align-items: center;
     overflow: auto;
     @media only screen and (min-width: 556px) {
-
       padding: 20px;
-
     }
     .col-md-3.bg-white {
       display: none;
@@ -201,8 +199,11 @@
       .logo {
         width: auto !important;
         margin: 0;
-        height: 35px;
+        height: 30px;
         @media only screen and (min-width: 556px) {
+          height: 40px;
+        }
+        @media only screen and (min-width: 1800px) {
           height: 60px;
         }
       }
@@ -211,10 +212,14 @@
         gap: 24px;
         flex-direction: column;
       }
-      @include media-breakpoint-up(sm) {
-        padding: 80px;
+      @media only screen and (min-width: 556px) {
+        padding: 50px;
         width: 100%;
         max-width: 600px;
+      }
+
+      @media only screen and (min-width: 1800px) {
+        padding: 80px;
       }
     }
     .auth_inner_wrap {
@@ -237,9 +242,27 @@
                 height: 65px;
               }
             }
+            .btn-icon__icon-container {
+              width: 30px !important;
+              height: 30px !important;
+              .pgn__icon.btn-icon__icon{
+                width: 30px !important;
+                height: 30px !important;
+              }
+            }
             .btn-icon {
+              width: 30px !important;
+              height: 30px !important;
+              &:focus {
+                box-shadow: none !important;
+                border: 0 !important;
+                outline: 0 !important;
+              }
               &:hover {
                 background-color: $primary !important;
+                img {
+                  filter: invert(1);
+                }
               }
             }
           }
@@ -262,7 +285,6 @@
               line-height: 20px;
 
               @media only screen and (min-width: 556px) {
-              
                 font-size: 20px;
                 line-height: 24px;
               }
@@ -292,9 +314,9 @@
             font-size: 16px;
             @media only screen and (min-width: 556px) {
               font-size: 26px;
-            padding: 0 10px;
-            transform: translateY(-15px) scale(0.75) translateY(-80.0007500188%);
-
+              padding: 0 10px;
+              transform: translateY(-15px) scale(0.75)
+                translateY(-80.0007500188%);
             }
           }
         }

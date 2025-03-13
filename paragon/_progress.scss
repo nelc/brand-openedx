@@ -9,12 +9,12 @@
       color: $text-color;
     }
     a {
-      color: #111827 !important;
+      color: $text-color !important;
       border-color: #1d1d1f !important;
       &:hover {
-        color: #374151 !important;
+        color: $light-dark !important;
         background-color: #eeeeee !important;
-        border-color: #111827 !important;
+        border-color: $text-color !important;
       }
     }
     @include media-breakpoint-up(sm) {
@@ -145,7 +145,7 @@
     margin-bottom: 0 !important;
   }
   .raised-card {
-    border-left: 8px solid #f3f3f3 !important;
+    border-left: 8px solid $concrete !important;
   }
 }
 .pgn__data-table {

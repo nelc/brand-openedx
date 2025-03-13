@@ -40,7 +40,7 @@ div[role="heading"].h2 + .list-unstyled.m-0.mt-4.pt-2 {
         padding: 0 0 0 48px !important;
         margin: 0 !important;
         .row.w-100.m-0.mb-1.align-items-center{
-            color: #111827;
+            color: $text-color;
             font-size: 12px;
             font-weight: 600;
         }
@@ -151,5 +151,5 @@ div[role="heading"].h2 + .list-unstyled.m-0.mt-4.pt-2 {
 }
 
 .h2 {
-  color: #111827;
+  color: $text-color;
 }

@@ -292,7 +292,7 @@ footer.tutor-container {
                 }
                 &.btn-outline-primary {
                   border: 1px solid #d1d5db;
-                  color: #374151;
+                  color: $light-dark;
                   padding: 2px 13px;
                   margin: 0 7px 0 0;
                   .btn-icon-before {
@@ -326,14 +326,14 @@ footer.tutor-container {
           font-size: 12px;
           line-height: 24px;
           font-weight: 500;
-          color: #374151;
+          color: $light-dark;
           border-radius: 4px;
           span {
             margin: 0;
           }
           svg {
             width: 16px;
-            fill: #374151;
+            fill: $light-dark;
           }
           &:hover {
             background-color: $concrete !important;
