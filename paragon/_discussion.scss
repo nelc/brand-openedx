@@ -266,10 +266,9 @@ html[data-mce-style] {
   &:hover {
     background: #f0eeed !important;
     padding: 5px !important;
-    img{
+    img {
       filter: brightness(0.5);
     }
-
   }
 }
 
@@ -281,7 +280,8 @@ html[data-mce-style] {
     padding: 5px;
     height: 24px !important;
   }
-  svg, img {
+  svg,
+  img {
     color: $text-color;
     path {
       stroke: $text-color !important;
@@ -290,7 +290,8 @@ html[data-mce-style] {
   &:hover {
     background: #f0eeed !important;
     padding: 5px !important;
-    svg, img {
+    svg,
+    img {
       color: $primary;
       path {
         stroke: $primary !important;
@@ -341,7 +342,7 @@ input {
 
 .pgn__card .pgn__card-section {
   .text-primary-300 {
-    color: $primary !important;
+    color: $text-color !important;
   }
   .text-gray-700 {
     color: $text-color;
@@ -363,6 +364,15 @@ input {
       &:hover {
         background-color: $concrete !important;
       }
+    }
+  }
+  .submitButton {
+    color: #fff !important;
+  }
+  .font-style.p-0.false.btn.btn-link.btn-sm {
+    color: $link-color !important;
+    &:hover {
+      color: $text-color !important;
     }
   }
 }
@@ -412,5 +422,16 @@ input {
         }
       }
     }
+  }
+}
+
+.discussion-post {
+  .author-name,
+  .text-staff-color,
+  .flex-fill {
+    color: $text-color !important;
+  }
+  .post-summary-card-selected {
+    border-color: $primary !important;
   }
 }

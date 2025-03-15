@@ -176,11 +176,11 @@
         padding: 9px 15px !important;
         box-shadow: none !important;
         outline: none !important;
-        background: $primary-light !important;
-        color: $primary;
         font-size: 14px;
         font-weight: 500;
         line-height: 20px;
+        background-color: $concrete !important;
+        color: #111827 !important;
         &:before {
           display: none !important;
         }

@@ -242,14 +242,22 @@ footer.tutor-container {
                     &:hover {
                       background-color: $primary !important;
                       color: #fff;
+                      path {
+                        stroke: #ffffff !important;
+                        fill: #ffffff !important;
+                      }
                     }
                   }
                 }
               }
               .pgn__dropdown-toggle-iconbutton {
-                width: auto;
-                height: auto;
+                width: 30px !important;
+                height: 30px !important;
                 transform: rotate(90deg);
+                .btn-icon__icon {
+                  width: 30px !important;
+                  height: 30px !important;
+                }
               }
               .dropdown-menu {
                 inset: unset !important;
@@ -309,7 +317,7 @@ footer.tutor-container {
                   }
                 }
                 &:hover {
-                    border: 1px solid $primary-hover !important;
+                  border: 1px solid $primary-hover !important;
                   background-color: $primary-hover !important;
                 }
               }
@@ -486,11 +494,11 @@ footer.tutor-container {
     background-color: $primary !important;
     border: 0 !important;
     &:hover {
-        background-color: $primary-hover !important;
-        &:before {
-          display: none !important;
-        }
+      background-color: $primary-hover !important;
+      &:before {
+        display: none !important;
       }
+    }
     * {
       color: white;
       fill: white;
@@ -499,7 +507,71 @@ footer.tutor-container {
   .btn.btn-link {
     font-size: 14px;
     &:hover {
-        color: $text-color !important;
+      color: $text-color !important;
+    }
+  }
+}
+
+.newFooterWrapper {
+  background-color: #fbfbfb;
+  border-top: 0 !important;
+  .footerWrap {
+    &__content {
+      padding: 48px 40px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-direction: row;
+      color: $text-color;
+    }
+    &__copyRight {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    &__links {
+      display: flex;
+      gap: 60px;
+      a {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration: none;
+      color: $text-color !important;
+        &:hover {
+          color: $primary !important;
+        }
       }
+    }
+    &__social {
+      display: flex;
+      gap: 16px;
+      &-icon {
+        fill: $primary;
+      }
+    }
+    .footer-top {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .footerWrap {
+      &__content {
+        padding: 20px;
+        flex-direction: column-reverse;
+      }
+      &__links {
+        gap: 10px;
+        flex-direction: column;
+      }
+      &__social {
+        justify-content: center;
+      }
+      &__copyRight {
+        font-size: 14px;
+      }
+    }
   }
 }

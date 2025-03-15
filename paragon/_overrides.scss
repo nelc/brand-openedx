@@ -425,6 +425,12 @@ html {
             &:after {
               background-color: $primary !important;
             }
+            .youtubeIcon {
+              opacity: 1;
+            }
+          }
+          .youtubeIcon {
+            opacity: 0.6;
           }
         }
       }
@@ -802,7 +808,7 @@ div.instructor {
       font-weight: 500 !important;
       color: $text-color;
       margin-right: 25px;
-      &:dir(rtl){
+      &:dir(rtl) {
         margin-right: unset;
         margin-left: 25px;
       }
@@ -862,7 +868,7 @@ div.instructor {
   box-shadow: none !important;
   &:after {
     box-shadow: unset !important;
-  }    
+  }
   .masquerade-bar {
     margin-bottom: 0;
     .pgn__form-control-floating-label-text {
