@@ -1,29 +1,264 @@
+body.indigo-dark-theme {
+  @import "../themes/dark/variables";
 
+  @import "./header";
+  @import "./footer";
+  @import "./login";
+  @import "./progress";
+  @import "./tour";
+  @import "./learning";
+  @import "./discussion";
+  @import "./account";
+  @import "./profile";
+  @import "./dates";
+  @import "../themes/dark/utilities";
+  @import "../themes/dark/extras";
 
-
-body.indigo-dark-theme{
-
-    @import "../themes/dark/variables";
-
-    @import "./header";
-    @import "./footer";
-    @import "./login";
-    @import "./progress";
-    @import "./tour";
-    @import "./learning";
-    @import "./discussion";
-    @import "./account";
-    @import "./profile";
-    @import "./dates";
-    @import "../themes/dark/utilities";
-    @import "../themes/dark/extras";
-
-    color: $text-color !important;
-    background: $body-bg !important;
-    * {
-        accent-color: $primary;
+  color: $text-color !important;
+  background: $body-bg !important;
+  * {
+    accent-color: $primary;
+  }
+  #root .auth_wrapper .content {
+    box-shadow: unset !important;
+    .auth_inner_wrap {
+      #sign-in-form {
+        .login-button-width.btn.btn-brand {
+          color: $primary-light !important;
+          &:hover {
+            background-color: $btn-hover;
+            border-color: $btn-hover;
+          }
+        }
+        .pgn__form-group {
+          .btn-icon-sm {
+            .btn-icon__icon-container {
+              .pgn__icon.btn-icon__icon {
+                img {
+                  filter: invert(1);
+                }
+              }
+            }
+            &:hover {
+              .btn-icon__icon-container {
+                .pgn__icon.btn-icon__icon {
+                  img {
+                    filter: brightness(0.5);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      #registration-form {
+        .register-button.btn.btn-brand {
+          color: $primary-light !important;
+          &:hover {
+            background-color: $btn-hover;
+            border-color: $btn-hover;
+          }
+        }
+        .pgn__form-group {
+          .btn-icon-sm {
+            .btn-icon__icon-container {
+              .pgn__icon.btn-icon__icon {
+                img {
+                  filter: invert(1);
+                }
+              }
+            }
+            &:hover {
+              .btn-icon__icon-container {
+                .pgn__icon.btn-icon__icon {
+                  img {
+                    filter: brightness(0.5);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
+    .auth_main_wrap {
+      .auth_logo_wrap {
+        img {
+          filter: brightness(233);
+        }
+      }
+    }
+  }
+
+  // profile dark
+
+  .btn-primary,
+  .btn-link {
+    background-color: $primary !important;
+    border-color: $primary !important;
+    color: $primary-light !important;
+    &:hover {
+      background-color: $btn-hover !important;
+      border-color: $btn-hover !important;
+    }
+  }
+  .profile-page .container-fluid .row {
+    .pgn-transition-replace-group .editable-item-header {
+      button {
+        &:hover {
+          border-color: $btn-hover !important;
+          background-color: $btn-hover !important;
+          color: $primary-light !important;
+        }
+      }
+    }
+    form .form-group.flex-shrink-0.flex-grow-1 {
+      button.btn-link {
+        &:hover {
+          color: $primary-light !important;
+        }
+      }
+    }
+    .pgn-transition-replace-group small.form-text {
+      border: 1px solid $border-color !important;
+      background-color: transparent !important;
+    }
+  }
+
+  // account dark
+
+  button.btn-outline-primary {
+    &:hover {
+      border-color: $btn-hover !important;
+      background-color: $btn-hover !important;
+      color: $primary-light !important;
+    }
+  }
+
+  .page__account-settings {
+    .pgn-transition-replace-group p.small.text-muted,
+    .pgn-transition-replace-group div.pgn__form-text.pgn__form-text-default {
+      border: 1px solid $border-color !important;
+      background-color: transparent !important;
+    }
+
+    .pgn-transition-replace-group form > p button {
+      &:hover {
+        border-color: $btn-hover !important;
+        background-color: $btn-hover !important;
+        color: $primary-light !important;
+      }
+    }
+    .pgn-transition-replace-group .form-group .d-flex.align-items-start {
+      button {
+        &:hover {
+          border-color: $btn-hover !important;
+          background-color: $btn-hover !important;
+          color: $primary-light !important;
+        }
+      }
+    }
+    .row .col-md-2 .jump-nav ul li.font-weight-bold a {
+      background-color: $btn-hover !important;
+      color: $primary-light !important;
+    }
+    .row .col-md-2 .jump-nav ul li a {
+      background-color: transparent !important;
+      &:hover {
+        background-color: $btn-hover !important;
+        color: $primary-light !important;
+      }
+    }
+
+    #delete-account button.btn-outline-danger {
+      &:hover {
+        background-color: $danger;
+        color: $text-color;
+      }
+    }
+  }
+
+  #root .user-dropdown button {
+    color: #111827 !important;
+  }
+  .masquerade-bar {
+    .masquerade-form-label {
+      color: #ffffff;
+    }
+    .pgn__form-control-floating-label-text {
+      color: #ffffff;
+    }
+  }
+  #dashboard-container
+    .container-mw-xl.container-fluid
+    .row
+    .course-list-column
+    .course-card
+    .pgn__card
+    .pgn__action-row
+    a {
+    &:hover {
+      border-color: $btn-hover !important;
+      background-color: $btn-hover !important;
+      color: $primary-light !important;
+    }
+  }
+  .newFooterWrapper {
+    background-color: #1c1c1c;
+  }
+
+  // Learning
+
+  .course_tabs_wrapper {
+    .nav.nav-underline-tabs .nav-link {
+      &:hover,
+      &.active {
+        border-bottom: 2px solid $primary !important;
+        background-color: #4600c7 !important;
+      }
+    }
+  }
+
+  #root .course-outline-tab {
+    .raised-card {
+      background-color: #292a2c !important;
+      .pgn__card-header-actions a {
+        &:hover {
+          border-color: $btn-hover !important;
+          background-color: $btn-hover !important;
+          color: $primary-light !important;
+        }
+      }
+    }
+    .col-12.col-md-auto.p-0 .btn {
+      &:hover {
+        color: #111827 !important;
+      }
+    }
+    section.mb-4 ul li a {
+      color: #006daa !important;
+      &:hover {
+        color: $btn-hover !important;
+        svg {
+          stroke: $btn-hover;
+        }
+      }
+    }
+  }
+  .col-12.col-sm-6.align-self-center.p-0 {
+    background-color: #ffffff;
+  }
+  .pgn__data-table-layout-wrapper {
+    border: 1px solid #292a2c !important;
+    background-color: transparent !important;
+    border-radius: 10px;
+  }
+  .pgn__data-table {
+    th {
+      background-color: #292a2c !important;
+    }
+    td {
+      background-color: #0d0d0e !important;
+    }
+  }
 }
-
-    
-

@@ -300,7 +300,7 @@ div[data-learner-type="b2c_learner"] {
 #courseHome-dates {
   a {
     &:hover {
-      color: $primary;
+      color: $text-color !important;
     }
   }
   .small {

@@ -102,8 +102,8 @@
             padding: 16px;
           }
           &:hover {
-            background: $primary-light;
-            color: $text-color;
+            background: $primary;
+            color: #fff;
           }
           &.h-desktop {
             display: none;
@@ -189,7 +189,7 @@
           vertical-align: middle;
           content: "";
           margin: 0 0 2px 8px;
-          border: 2px solid $primary;
+          border: 2px solid #111827;
           border-width: 0 0 2px 2px;
           transform: rotate(-45deg);
           width: 7px;
@@ -228,8 +228,8 @@
             padding: 16px;
           }
           &:hover {
-            background: $primary-light;
-            color: $text-color;
+            background: $primary;
+            color: #fff
           }
         }
       }

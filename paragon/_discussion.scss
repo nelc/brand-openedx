@@ -435,3 +435,95 @@ input {
     border-color: $primary !important;
   }
 }
+
+body.indigo-dark-theme {
+  #root {
+    .course-tabs-navigation {
+      .nav.nav-underline-tabs {
+        a.nav-link {
+          &:hover,
+          &.active {
+            border-bottom: 2px solid $primary !important;
+            background-color: #4600c7 !important;
+          }
+        }
+      }
+    }
+    .header-action-bar
+      .fixed-top.navbar
+      .nav-button-group.nav-pills
+      .nav-item
+      a.nav-link.active,
+    .header-action-bar
+      .fixed-top.navbar
+      .nav-button-group.nav-pills
+      .nav-item
+      a.nav-link:hover {
+      border-bottom: 2px solid $primary !important;
+      background-color: #4600c7 !important;
+    }
+
+    .discussion-posts {
+      .collapsible-card-lg {
+        .collapsible-trigger {
+          span {
+            img {
+              border-radius: 5px !important;
+              background-color: #ffffff !important;
+            }
+          }
+        }
+      }
+    }
+
+    .header-action-bar {
+      .navbar {
+        .pgn__searchfield {
+          border: 1px solid #f3f3f3 !important;
+          background: transparent !important;
+          form.pgn__searchfield-form .form-control {
+            background: transparent !important;
+          }
+        }
+      }
+    }
+    .header-action-bar .navbar .btn.btn-brand:hover {
+      border-color: #a7b6d2 !important;
+      background-color: #a7b6d2 !important;
+      color: $primary-light !important;
+    }
+  }
+  .topic-name.text-truncate {
+    color: #111827 !important;
+    &.dark-black-color {
+      color: #111827 !important;
+    }
+  }
+  .pt-3.px-4.font-weight-bold.dark-black-color,
+  a.subsection {
+    color: #111827 !important;
+  }
+  .header-action-bar
+    + .d-flex.flex-row.position-relative
+    .d-flex.flex-column.w-75.w-xs-100.w-xl-75.align-items-center.overflow-auto {
+    background-color: transparent !important;
+    border-left: 1px solid #f3f3f3 !important;
+    &:dir(rtl) {
+      border-left: unset !important;
+      border-right: 1px solid transparent !important;
+    }
+  }
+  .post-form .d-flex.justify-content-end .btn.btn-outline-primary {
+    border-color: #d1d5db !important;
+    color: #d1d5db !important;
+    &:hover {
+      color: #374151 !important;
+    }
+  }
+  .pgn__card .pgn__card-section .text-primary-300 {
+    img {
+      background: #fff;
+      border-radius: 4px;
+    }
+  }
+}
