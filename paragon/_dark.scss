@@ -228,6 +228,11 @@ body.indigo-dark-theme {
           background-color: $btn-hover !important;
           color: $primary-light !important;
         }
+        &:focus{
+          border-color: $btn-hover !important;
+          background-color: $btn-hover !important;
+          color: $primary-light !important;
+        }
       }
     }
     .col-12.col-md-auto.p-0 .btn {
@@ -260,5 +265,20 @@ body.indigo-dark-theme {
     td {
       background-color: #0d0d0e !important;
     }
+  }
+  ol.d-flex.list-unstyled.flex-nowrap.align-items-center.m-0{
+    li.list-unstyled.col-auto.m-0.p-0{
+      a.flex-shrink-0{
+        img{
+          filter: invert(1);
+        }
+      }
+    }
+    img{
+      filter: invert(1);
+    }
+  }
+  .course-tabs-navigation + .container-xl > .row > .col-12.col-md-8.p-0 .rounded.raised-card .bg-warning-100 {
+    background: #292a2c !important;
   }
 }

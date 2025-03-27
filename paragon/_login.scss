@@ -356,3 +356,31 @@
     }
   }
 }
+
+.pp-page-content {
+  margin: 0 !important;
+  .btn.btn-brand {
+    color: #ffffff !important;
+    background-color: #4600c7 !important;
+    border-color: #4600c7 !important;
+    margin-right: 20px !important;
+    &:hover {
+      background-color: #6a32d1 !important;
+      border-color: #6a32d1 !important;
+    }
+    &:dir(rtl) {
+      margin-right: unset !important;
+      margin-left: 20px !important;
+    }
+  }
+}
+body.indigo-dark-theme #root .layout {
+  .auth_inner_wrap input.form-control {
+    &:focus {
+      border: 1px solid #fff !important;
+    }
+  }
+  #forgot-password {
+    background-color: transparent !important;
+  }
+}
