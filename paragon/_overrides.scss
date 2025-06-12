@@ -3,6 +3,7 @@
 
 @import "~@openedx/paragon/styles/css/themes/light/variables";
 @import "~@openedx/paragon/styles/css/themes/light/utility-classes";
+@import "~@openedx/paragon/styles/scss/core/core";
 
 @import url('https://cdn.jsdelivr.net/npm/@openedx/paragon@23.0.0-alpha.1/styles/css/themes/light/utility-classes.min.css');
 @import url('https://cdn.jsdelivr.net/npm/@openedx/paragon@23.0.0-alpha.1/dist/core.min.css');
@@ -13,7 +14,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 
 :root {
   --pgn-typography-font-family-base: 'DIN Next LT Arabic',var(--pgn-typography-font-family-sans-serif) !important;
@@ -948,6 +948,12 @@ div.instructor {
   }
 }
 
+.choicegroup {
+    label {
+  color: black !important;
+   }
+}
+
 
 @import "./header";
 @import "./footer";
@@ -959,7 +965,6 @@ div.instructor {
 @import "./account";
 @import "./profile";
 @import "./dates";
-@import "./extras";
 
 // Including dark theme
 @import "./dark";

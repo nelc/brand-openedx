@@ -11,8 +11,6 @@ body.indigo-dark-theme {
   @import "./account";
   @import "./profile";
   @import "./dates";
-  @import "../themes/dark/utilities";
-  @import "../themes/dark/extras";
 
   color: $text-color !important;
   background: $body-bg !important;
