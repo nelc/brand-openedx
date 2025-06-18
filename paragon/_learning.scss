@@ -1,15 +1,15 @@
 #courseHome-outline {
   .pgn_collapsible {
     border-radius: 8px;
-    border: 1px solid $concrete;
-    border-left: 8px solid $concrete;
+    border: 1px solid var(--fx-color-concrete);
+    border-left: 8px solid var(--fx-color-concrete);
   }
   .collapsible-trigger {
     padding: 8px 20px;
     border: none !important;
     font-size: 18px;
     padding: 16px 24px;
-    color: $text-color !important;
+    color: var(--fx-color-text) !important;
     line-height: 30px;
     gap: 16px;
     @include media-breakpoint-up(md) {
@@ -26,10 +26,7 @@
       }
     }
     .text-success {
-      color: $primary !important;
-    }
-    .align-middle.col-6 {
-      padding-left: 0;
+      color: var(--fx-color-primary) !important;
     }
     .d-flex.row {
       .col-7.ml-3.text-dark-500 {
@@ -55,7 +52,7 @@
       padding: 0 0 0 91px;
     }
     .text-success {
-      color: $primary !important;
+      color: var(--fx-color-primary) !important;
     }
     ol {
       padding: 0 0 15px;
@@ -66,7 +63,7 @@
           }
         }
         a {
-          color: $text-color;
+          color: var(--fx-color-text);
           font-size: 15px;
           @include media-breakpoint-up(md) {
             font-size: 18px;
@@ -82,15 +79,15 @@
       align-items: center;
       gap: 16px;
       svg {
-        width: 22px;
-        height: 22px;
+        width: 30px;
+        height: 30px;
       }
       .inner-section-text {
         display: flex;
         align-items: center;
         gap: 16px;
         a {
-          color: $text-color !important;
+          color: var(--fx-color-text) !important;
           font-size: 18px;
           line-height: 30px;
           font-weight: 400;
@@ -101,12 +98,12 @@
 }
 #root {
   .bg-light-400 {
-    background: $primary-light !important;
+    background: var(--fx-color-primary-light) !important;
   }
   .alert.alert-success {
     box-shadow: none;
     a {
-      background: #15376d;
+      background: var(--fx-color-chathams-blue);
       padding: 9px 17px;
       font-size: 16px;
       line-height: 24px;
@@ -138,7 +135,7 @@
     }
     .raised-card {
       padding: 14px 20px 0 20px;
-      background-color: $concrete !important;
+      background-color: var(--fx-color-concrete) !important;
       line-height: 24px !important;
       border-radius: 6px;
       box-shadow: none !important;
@@ -162,7 +159,7 @@
           margin-left: 0;
         }
         a {
-          background: $primary;
+          background: var(--fx-color-primary);
           padding: 9px 17px;
           font-size: 16px;
           line-height: 24px;
@@ -170,7 +167,7 @@
           border: none;
           &:hover,
           &:focus {
-            background-color: $primary-hover !important;
+            background-color: var(--fx-color-primary-hover) !important;
           }
           @include media-breakpoint-down(md) {
             width: 100%;
@@ -196,7 +193,7 @@
       .pgn__card-header-title-md {
         font-size: 18px;
         line-height: 22px;
-        color: $text-color;
+        color: var(--fx-color-text);
       }
     }
     .col-12.col-md-auto.p-0 {
@@ -209,12 +206,12 @@
 #root .course-outline-tab .col-12.col-md-auto.p-0 .btn {
   background: none !important;
   padding: 10px 17px !important;
-  color: $text-color !important;
+  color: var(--fx-color-text) !important;
   font-size: 16px !important;
-  border: 1px solid $text-color !important;
+  border: 1px solid var(--fx-color-text) !important;
   &:hover,
   &:focus {
-    background-color: $concrete !important;
+    background-color: var(--fx-color-concrete) !important;
   }
   &:before {
     content: unset !important;
@@ -225,14 +222,14 @@
   padding-top: 20px;
   border: none;
   .nav.nav-underline-tabs {
-    border-bottom: 1px solid $primary-light;
+    border-bottom: 1px solid var(--fx-color-primary-light);
     .nav-link {
       border-top: 0;
       padding: 10px 16px;
       border-bottom: 2px solid transparent;
       font-size: 16px;
       font-weight: 500 !important;
-      color: $text-color;
+      color: var(--fx-color-text);
       margin-right: 25px;
       &:dir(rtl){
         margin-right: unset;
@@ -240,8 +237,8 @@
       }
       &:hover,
       &.active {
-        border-bottom: 2px solid $primary !important;
-        background-color: $concrete !important;
+        border-bottom: 2px solid var(--fx-color-primary) !important;
+        background-color: var(--fx-color-concrete) !important;
       }
     }
   }
@@ -251,7 +248,7 @@ div[data-learner-type="b2c_learner"] {
     font-size: 28px;
     line-height: 32px;
     margin: 0 0 20px;
-    color: $text-color;
+    color: var(--fx-color-text);
     font-weight: 800;
     @include media-breakpoint-up(md) {
       font-size: 36px;
@@ -270,7 +267,7 @@ div[data-learner-type="b2c_learner"] {
       padding: 0 0 0 25px;
     }
     h2 {
-      color: $text-color;
+      color: var(--fx-color-text);
       font-size: 20px;
       line-height: 28px;
       font-weight: 700;
@@ -284,13 +281,13 @@ div[data-learner-type="b2c_learner"] {
           font-size: 14px;
           line-height: 20px;
           font-weight: 500;
-          color: $primary;
+          color: var(--fx-color-primary);
           text-decoration: underline;
           &:hover {
             text-decoration: none;
           }
           svg {
-            color: #9ca3af;
+            color: var(--fx-color-gray-chateau);
           }
         }
       }
@@ -300,7 +297,7 @@ div[data-learner-type="b2c_learner"] {
 #courseHome-dates {
   a {
     &:hover {
-      color: $text-color !important;
+      color: var(--fx-color-text) !important;
     }
   }
   .small {
@@ -318,25 +315,25 @@ div[data-learner-type="b2c_learner"] {
     height: 32px;
   }
   .section-heading {
-    color: $text-color !important;
+    color: var(--fx-color-text) !important;
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
   }
   svg {
     &.text-success {
-      fill: #178253 !important;
-      stroke: #178253 !important;
+      fill: var(--fx-color-jewel) !important;
+      stroke: var(--fx-color-jewel) !important;
       path {
-        stroke: #fff !important;
+        stroke: var(--fx-color-white) !important;
         stroke-width: 3px;
         &:first-child {
-          stroke: #178253 !important;
+          stroke: var(--fx-color-jewel) !important;
         }
       }
     }
     &.inComplete {
-      stroke: #8f8f8f !important;
+      stroke: var(--fx-color-gray-color) !important;
       path {
         stroke-width: 3px;
       }
@@ -349,18 +346,18 @@ div[data-learner-type="b2c_learner"] {
     width: 22px;
     height: 22px;
     &.text-success {
-      fill: #178253 !important;
-      stroke: #178253 !important;
+      fill: var(--fx-color-jewel) !important;
+      stroke: var(--fx-color-jewel) !important;
       path {
-        stroke: #fff !important;
+        stroke: var(--fx-color-white) !important;
         stroke-width: 3px;
         &:first-child {
-          stroke: #178253 !important;
+          stroke: var(--fx-color-jewel) !important;
         }
       }
     }
     &.inComplete {
-      stroke: #8f8f8f !important;
+      stroke: var(--fx-color-gray-color) !important;
       path {
         stroke-width: 3px;
       }
@@ -370,16 +367,16 @@ div[data-learner-type="b2c_learner"] {
 .collapsible-icon {
   margin-inline-start: 0;
   .btn-icon.btn-icon-primary {
-    color: $primary !important;
+    color: var(--fx-color-primary) !important;
     &:hover {
-      background-color: $primary !important;
-      color: white !important;
+      background-color: var(--fx-color-primary) !important;
+      color: var(--fx-color-white) !important;
     }
   }
 }
 
 .pgn__stateful-btn{
-  color: $text-color;
+  color: var(--fx-color-text);
   .pgn__stateful-btn-icon{
     img{
       width: 18px;
@@ -387,6 +384,6 @@ div[data-learner-type="b2c_learner"] {
     }
   }
   &:hover{
-    color: $text-color;
+    color: var(--fx-color-text);
   }
 }

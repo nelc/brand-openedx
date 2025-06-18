@@ -6,15 +6,15 @@
       font-weight: 800;
       font-size: 18px;
       line-height: 25px;
-      color: $text-color;
+      color: var(--fx-color-text);
     }
     a {
-      color: $text-color !important;
-      border-color: #1d1d1f !important;
+      color: var(--fx-color-text) !important;
+      border-color: var(--fx-color-shark) !important;
       &:hover {
-        color: $light-dark !important;
-        background-color: #eeeeee !important;
-        border-color: $text-color !important;
+        color: var(--fx-color-light-dark) !important;
+        background-color: var(--fx-color-gallery) !important;
+        border-color: var(--fx-color-text) !important;
       }
     }
     @include media-breakpoint-up(sm) {
@@ -26,8 +26,8 @@
   > .row {
     > .col-12.col-md-8.p-0 {
       .rounded.raised-card {
-        border: 1px solid $concrete !important;
-        border-left: 8px solid $concrete !important;
+        border: 1px solid var(--fx-color-concrete) !important;
+        border-left: 8px solid var(--fx-color-concrete) !important;
         border-radius: 8px !important;
         box-shadow: none !important;
         font-size: 16px;
@@ -51,15 +51,15 @@
         }
         .bg-warning-100 {
           padding: 10px 15px;
-          background: $concrete !important;
-          color: $text-color !important;
+          background: var(--fx-color-concrete) !important;
+          color: var(--fx-color-text) !important;
           .h4 {
             font-size: 14px;
-            color: $text-color !important;
+            color: var(--fx-color-text) !important;
             font-weight: 600;
           }
           svg {
-            color: $text-color !important;
+            color: var(--fx-color-text) !important;
           }
         }
       }
@@ -67,7 +67,7 @@
     > .col-12.col-md-4.p-0.px-md-4,
     > .col-12.col-md-8.p-0 {
       .bg-light-200.raised-card {
-        background: $concrete;
+        background: var(--fx-color-concrete);
         box-shadow: none !important;
         .pgn__card-header {
           .pgn__card-header-content {
@@ -85,18 +85,18 @@
         }
         .btn.btn-outline-brand {
           padding: 7px 13px !important;
-          border: 1px solid $primary;
-          color: #fff;
+          border: 1px solid var(--fx-color-primary);
+          color: var(--fx-color-white);
           text-decoration: none;
           font-size: 14px;
           font-weight: 500;
           line-height: 20px;
           margin: 0 !important;
-          background: $primary;
+          background: var(--fx-color-primary);
         }
       }
       section.mb-4.x-small {
-        background-color: $concrete;
+        background-color: var(--fx-color-concrete);
         font-size: 16px !important;
         border-radius: 8px;
         padding: 20px;
@@ -104,7 +104,7 @@
         ul {
           list-style: none;
           a {
-            color: $text-color !important;
+            color: var(--fx-color-text) !important;
           }
         }
       }
@@ -113,12 +113,12 @@
   .donut-ring.complete-stroke,
   .donut-segment.complete-stroke,
   .donut-hole.complete-stroke {
-    stroke: $primary;
+    stroke: var(--fx-color-primary);
   }
   .donut-ring.incomplete-stroke,
   .donut-segment.incomplete-stroke,
   .donut-hole.incomplete-stroke {
-    stroke: $concrete;
+    stroke: var(--fx-color-concrete);
   }
   svg.donut {
     @include media-breakpoint-up(sm) {
@@ -127,14 +127,14 @@
   }
   .donut-chart-text {
     .donut-chart-number {
-      color: $text-color;
+      color: var(--fx-color-text);
     }
     .donut-chart-label {
-      color: #4b5563;
+      color: var(--fx-color-river-red);
     }
   }
   .grade-bar .grade-bar__base {
-    fill: $concrete;
+    fill: var(--fx-color-concrete);
   }
 }
 .grades {
@@ -145,13 +145,13 @@
     margin-bottom: 0 !important;
   }
   .raised-card {
-    border-left: 8px solid $concrete !important;
+    border-left: 8px solid var(--fx-color-concrete) !important;
   }
 }
 .pgn__data-table {
   th {
     background-color: transparent !important;
-    border-bottom: 1px solid #e5e7eb !important;
+    border-bottom: 1px solid var(--fx-color-athens-gray) !important;
     span.h5 {
       font-size: 14px;
       font-weight: 500 !important;
@@ -163,14 +163,14 @@
   }
   td {
     font-size: 14px;
-    color: $text-color !important;
+    color: var(--fx-color-text) !important;
     > div {
       font-size: 14px;
-      color: $text-color !important;
+      color: var(--fx-color-text) !important;
     }
   }
   &-footer {
-    background-color: $concrete !important;
+    background-color: var(--fx-color-concrete) !important;
   }
 }
 
@@ -184,40 +184,39 @@
     font-size: 14px !important;
   }
   #weighted-grade-summary.small {
-    color: $text-color !important;
+    color: var(--fx-color-text) !important;
     font-weight: 600 !important;
     font-size: 14px !important;
     line-height: 20px !important;
   }
 }
 a.muted-link {
-  color: $text-color !important;
+  color: var(--fx-color-text) !important;
   font-size: 14px !important;
 }
 
 .btn-icon {
   width: 24px !important;
   height: 24px !important;
-  &.btn-icon-primary{
+  &.btn-icon-primary {
     &:hover {
-      background-color: $concrete !important;
-      color: white;
+      background-color: var(--fx-color-concrete) !important;
+      color: var(--fx-color-white);
       .btn-icon__icon {
         svg {
           path {
-            stroke: $primary !important;
-            fill: $primary !important;
+            stroke: var(--fx-color-primary) !important;
+            fill: var(--fx-color-primary) !important;
           }
         }
       }
     }
   }
-
 }
 .btn-icon__icon {
   svg {
     path {
-      fill: $text-color !important;
+      fill: var(--fx-color-text) !important;
     }
   }
 }
@@ -228,35 +227,35 @@ a.muted-link {
   background-color: transparent !important;
 }
 #non-passing-grade-tooltip {
-  background: $primary;
-  border-color: $primary;
+  background: var(--fx-color-primary);
+  border-color: var(--fx-color-primary);
   filter: none;
   .arrow {
     &:before {
-      border-top-color: $primary !important;
+      border-top-color: var(--fx-color-primary) !important;
     }
     &:after {
-      border-top-color: $primary !important;
+      border-top-color: var(--fx-color-primary) !important;
     }
   }
   .popover-body {
-    color: white !important;
+    color: var(--fx-color-white) !important;
   }
 }
 
 #minimum-grade-tooltip.bg-primary-500 {
-  background: #bbbbbc !important;
-  border-color: #bbbbbc !important;
+  background: var(--fx-color-french-gray) !important;
+  border-color: var(--fx-color-french-gray) !important;
   filter: none;
   .arrow {
     &:before {
-      border-bottom-color: #bbbbbc !important;
+      border-bottom-color: var(--fx-color-french-gray) !important;
     }
     &:after {
-      border-bottom-color: #bbbbbc !important;
+      border-bottom-color: var(--fx-color-french-gray) !important;
     }
   }
   .popover-body {
-    color: white !important;
+    color: var(--fx-color-white) !important;
   }
 }

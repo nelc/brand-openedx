@@ -1,5 +1,6 @@
 // Use this file to set SASS variables for @edx/paragon
 // See _variables.scss in https://github.com/openedx/paragon/blob/master/scss/core/ for reference
+
 $primary: #4600c7;
 $primary-light: #F2F7F8;
 $light-dark: #374151;
@@ -10,6 +11,38 @@ $concrete: #f3f3f3;
 $white: #ffffff;
 $danger: #b91c1c;
 $link-color: #006DAA;
+$chathams-blue: #15376d;
+$gray-chateau:#9ca3af;
+$jewel: #178253;
+$gray-color: #8f8f8f;
+$shark: #1d1d1f;
+$gallery: #eeeeee;
+$river-red: #4b5563;
+$athens-gray:#e5e7eb;
+$french-gray: #bbbbbc;
+
+:root {
+  --fx-color-primary: #{$primary};
+  --fx-color-primary-light: #{$primary-light};
+  --fx-color-light-dark: #{$light-dark};
+  --fx-color-text: #{$text-color};
+  --fx-color-text-primary: #{$text-color-primary};
+  --fx-color-primary-hover: #{$primary-hover};
+  --fx-color-concrete: #{$concrete};
+  --fx-color-white: #{$white};
+  --fx-color-danger: #{$danger};
+  --fx-color-link: #{$link-color};
+  --fx-color-chathams-blue: #{$chathams-blue};
+  --fx-color-gray-chateau: #{$gray-chateau};
+  --fx-color-jewel: #{$jewel};
+  --fx-color-gray-color: #{$gray-color};
+  --fx-color-shark: #{$shark};
+  --fx-color-gallery: #{$gallery};
+  --fx-color-river-red: #{$river-red};
+  --fx-color-athens-gray: #{$athens-gray};
+  --fx-color-french-gray: #{$french-gray};
+}
+
 
 // for toggle theme button
 $page-color-transition: transparent .2s ease, color .2s ease;

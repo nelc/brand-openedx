@@ -1,22 +1,23 @@
 // Use this file to define style overrides for @edx/paragon
 // This file is included after all Paragon styles, but should generally avoid using private mixins in Paragon.
 
-@import "~@openedx/paragon/styles/css/themes/light/variables";
-@import "~@openedx/paragon/styles/css/themes/light/utility-classes";
-@import "~@openedx/paragon/styles/scss/core/core";
+@import "@openedx/paragon/styles/css/themes/light/variables";
+@import "@openedx/paragon/styles/css/themes/light/utility-classes";
+@import "@openedx/paragon/styles/scss/core/core";
 
-@import url('https://cdn.jsdelivr.net/npm/@openedx/paragon@23.0.0-alpha.1/styles/css/themes/light/utility-classes.min.css');
-@import url('https://cdn.jsdelivr.net/npm/@openedx/paragon@23.0.0-alpha.1/dist/core.min.css');
+@import url("https://cdn.jsdelivr.net/npm/@openedx/paragon@23.0.0-alpha.1/styles/css/themes/light/utility-classes.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@openedx/paragon@23.0.0-alpha.1/dist/core.min.css");
 
 @font-face {
-  font-family: 'DIN Next LT Arabic';
-  src: url('./fonts/din-next-lt-arabic-bold.ttf');
+  font-family: "DIN Next LT Arabic";
+  src: url("./fonts/din-next-lt-arabic-bold.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
-  --pgn-typography-font-family-base: 'DIN Next LT Arabic',var(--pgn-typography-font-family-sans-serif) !important;
+  --pgn-typography-font-family-base: "DIN Next LT Arabic",
+    var(--pgn-typography-font-family-sans-serif) !important;
 }
 body,
 .text-monospace,
@@ -62,13 +63,21 @@ html {
         a {
           color: $text-color !important;
           font-weight: 500;
+
+          &.dropdown-item {
+            &.active {
+              background-color: var(--fx-color-primary);
+              color: var(--fx-color-white) !important;
+            }
+          }
         }
+
         button {
           font-size: 14px;
           background: none !important;
           padding: 0 !important;
           line-height: 20px;
-          color: $text-color-primary !important;
+          color: var(--fx-color-text-primary) !important;
           border: none !important;
           font-weight: 500;
         }
@@ -177,6 +186,9 @@ html {
     div.d-flex.ml-auto {
       position: relative;
       padding: 0 0 10px;
+      margin-left: auto !important;
+      margin-right: unset !important;
+      gap: 10px;
       .ml-1,
       > div {
         margin: 0 !important;
@@ -207,7 +219,6 @@ html {
           padding: 5px;
           border: 1px solid #d1d5db !important;
           position: relative;
-          margin: 0 0 0 12px;
           border-radius: 6px;
           .icon-container {
             width: 21px !important;
@@ -413,7 +424,7 @@ html {
         .previous-button,
         .next-button {
           flex-basis: 110px;
-          color: $text-color;
+          color: var(--fx-color-text);
           border-color: #1d1d1f;
           cursor: pointer;
           &:hover {
@@ -476,14 +487,14 @@ html {
     padding: 24px !important;
     h4 {
       font-size: 18px;
-      color: $text-color;
+      color: var(--fx-color-text);
       font-weight: 500;
       line-height: 24px;
       margin: 0 0 15px;
     }
     p {
       font-size: 14px;
-      color: $text-color-primary;
+      color: var(--fx-color-text-primary);
     }
     .pgn__action-row {
       flex-direction: row;
@@ -558,7 +569,7 @@ html {
         width: 20px;
         border: 1px solid #c4c7cf;
         &:checked {
-          border-color: $text-color;
+          border-color: var(--fx-color-text);
         }
       }
       input[type="checkbox"] {
@@ -571,7 +582,7 @@ html {
 ol.d-flex.list-unstyled.flex-nowrap.align-items-center.m-0 {
   .li.list-unstyled.col-auto.m-0.p-0 {
     a {
-      color: $text-color;
+      color: var(--fx-color-text);
     }
   }
   .col-auto.p-0.mx-2.dark-black-color {
@@ -647,8 +658,8 @@ button.btn-icon.btn-icon-primary.btn-icon-sm {
     border: 1px solid $concrete;
   }
   button.mt-4.btn.btn-outline-primary.btn-block {
-    color: $text-color;
-    border: 1px solid $text-color;
+    color: var(--fx-color-text);
+    border: 1px solidvar(--fx-color-text);
     &:hover {
       background-color: #eeeeee;
     }
@@ -657,8 +668,8 @@ button.btn-icon.btn-icon-primary.btn-icon-sm {
 .course-outline-section {
   .pt-4 {
     button.mt-4.btn.btn-outline-primary.btn-block {
-      color: $text-color;
-      border: 1px solid $text-color;
+      color: var(--fx-color-text);
+      border: 1px solidvar(--fx-color-text);
       &:hover {
         background-color: #eeeeee;
       }
@@ -824,7 +835,7 @@ div.instructor {
       border-bottom: 2px solid transparent;
       font-size: 16px;
       font-weight: 500 !important;
-      color: $text-color;
+      color: var(--fx-color-text);
       margin-right: 25px;
       &:dir(rtl) {
         margin-right: unset;
@@ -857,19 +868,20 @@ div.instructor {
       line-height: 20px;
       .btn-inline,
       a {
-        color: #006daa;
+        color: var(--fx-color-link);
         font-weight: 500;
         display: flex;
         align-items: center;
         gap: 10px;
         &:hover {
-          color: $text-color;
+          color: var(--fx-color-text);
           svg {
-            stroke: $text-color;
+            stroke: var(--fx-color-text);
           }
         }
         svg {
-          stroke: #006daa;
+          stroke: var(--fx-color-link);
+          transition: filter 0.3s ease;
         }
       }
     }
@@ -948,12 +960,9 @@ div.instructor {
   }
 }
 
-.choicegroup {
-    label {
-  color: black !important;
-   }
+label {
+  color: var(--fx-color-text) !important;
 }
-
 
 @import "./header";
 @import "./footer";
