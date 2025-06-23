@@ -10,12 +10,12 @@
     &:hover,
     &:focus {
       box-shadow: none;
-      background-color: $concrete;
+      background-color: var(--fx-color-concrete);
     }
   }
 
   h1 {
-    color: $text-color;
+    color: var(--fx-color-text);
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -24,7 +24,7 @@
   .account-section {
     font-size: 14px;
     line-height: 20px;
-    color: $text-color-primary;
+    color: var(--fx-color-text-primary);
     margin-bottom: 20px !important;
     p {
       margin: 0 0 15px;
@@ -34,7 +34,7 @@
       line-height: 24px;
       font-weight: 700;
       margin: 0 0 15px;
-      color: $text-color;
+      color: var(--fx-color-text);
     }
     @include media-breakpoint-up(md) {
       margin-bottom: 64px !important;
@@ -71,8 +71,8 @@
           position: sticky;
           top: 0;
           border-radius: 10px;
-          background-color: #fff;
-          border: 2px solid $primary;
+          background-color: var(--fx-color-white);
+          border: 2px solid var(--fx-color-primary);
           padding: 5px 10px !important;
           flex-direction: row;
           display: flex;
@@ -82,8 +82,8 @@
 
             &.font-weight-bold {
               a {
-                background: $concrete;
-                color: $text-color !important;
+                background: var(--fx-color-concrete);
+                color: var(--fx-color-text) !important;
                 text-decoration: none;
               }
             }
@@ -92,12 +92,12 @@
               font-size: 14px;
               font-weight: 500;
               line-height: 20px;
-              color: $text-color !important;
+              color: var(--fx-color-text) !important;
               text-decoration: none;
               padding: 8px 12px;
               border-radius: 6px;
               &:hover {
-                background: $concrete;
+                background: var(--fx-color-concrete);
                 text-decoration: none;
               }
             }
@@ -138,39 +138,39 @@
       font-size: 14px;
     }
     a.standalone-link {
-      color: $text-color;
+      color: var(--fx-color-text);
       text-decoration: none;
       &:hover {
         text-decoration: underline;
-        text-decoration-color: $text-color;
+        text-decoration-color: var(--fx-color-text);
         text-underline-offset: 3px;
       }
     }
     button.btn-outline-danger {
       padding: 8px 14px !important;
-      border: 1px solid #d1d5db !important;
+      border: 1px solid var(--fx-color-mischka) !important;
       font-size: 14px !important;
-      color: $light-dark;
+      color: var(--fx-color-light-dark);
       text-decoration: none;
       font-weight: 500;
       &:hover {
-        background-color: #fbf2f3;
+        background-color: var(--fx-color-fantasy);
       }
     }
   }
 
   .pgn-transition-replace-group + .form-group {
-    border: 1px solid $concrete;
-    border-left: 8px solid $concrete;
+    border: 1px solid var(--fx-color-concrete);
+    border-left: 8px solid var(--fx-color-concrete);
     padding: 15px !important;
     margin: 0 0 15px !important;
     border-radius: 8px;
     font-size: 14px;
-    color: $text-color;
+    color: var(--fx-color-text);
     h6 {
       font-weight: 600;
       font-size: 18px;
-      color: $text-color;
+      color: var(--fx-color-text);
       margin: 5px 0 0 !important;
     }
     p {
@@ -179,7 +179,7 @@
         &.btn-link {
           font-weight: 600;
           font-size: 16px;
-          color: $text-color;
+          color: var(--fx-color-text);
         }
       }
     }
@@ -187,34 +187,34 @@
       margin: 10px 0 0 !important;
       box-shadow: none;
       padding: 15px !important;
-      background: $concrete !important;
+      background: var(--fx-color-concrete) !important;
       a {
-        color: $primary;
+        color: var(--fx-color-primary);
       }
     }
   }
   .pgn-transition-replace-group {
-    border: 1px solid $concrete;
-    border-left: 8px solid $concrete;
+    border: 1px solid var(--fx-color-concrete);
+    border-left: 8px solid var(--fx-color-concrete);
     padding: 15px !important;
     margin: 0 0 15px !important;
     border-radius: 8px;
     font-size: 14px;
-    color: $text-color;
+    color: var(--fx-color-text);
     p.h6 {
       font-weight: 600;
       font-size: 16px;
-      color: $text-color;
+      color: var(--fx-color-text);
       margin: 5px 0 0 !important;
     }
     p.small.text-muted,
     div.pgn__form-text.pgn__form-text-default {
-      background: $concrete !important;
+      background: var(--fx-color-concrete) !important;
       padding: 10px 15px;
       border-radius: 6px;
       font-size: 14px;
       line-height: 20px;
-      color: $text-color !important;
+      color: var(--fx-color-text) !important;
       margin: 10px 0 0 !important;
       &:empty {
         display: none;
@@ -226,12 +226,12 @@
       p[data-hj-suppress="true"] {
         font-weight: 600;
         font-size: 16px;
-        color: $text-color-primary;
+        color: var(--fx-color-text-primary);
         margin: 5px 0 0 !important;
         button {
           font-weight: 600;
           font-size: 16px;
-          color: $text-color;
+          color: var(--fx-color-text);
           margin: 0 !important;
           text-decoration: none;
           &:hover {
@@ -245,13 +245,13 @@
           font-size: 18px;
           font-weight: 600;
           line-height: 24px;
-          color: $text-color;
+          color: var(--fx-color-text);
           margin: 0;
         }
         button {
           padding: 7px 13px !important;
-          border: 1px solid $primary !important;
-          color: #fff;
+          border: 1px solid var(--fx-color-primary) !important;
+          color: var(--fx-color-white);
           text-decoration: none;
           font-size: 14px;
           font-weight: 500;
@@ -260,19 +260,19 @@
           position: absolute;
           right: 15px;
           top: 15px;
-          background: $primary;
+          background: var(--fx-color-primary);
           svg {
             display: none;
           }
           &:hover {
-            background-color: $primary-hover !important;
-            border: 1px solid $primary-hover !important;
+            background-color: var(--fx-color-primary-hover) !important;
+            border: 1px solid var(--fx-color-primary-hover) !important;
           }
         }
         p {
           .small.text-muted {
             font-size: 16px;
-            color: $text-color-primary !important;
+            color: var(--fx-color-text-primary) !important;
             line-height: 20px;
           }
         }
@@ -286,7 +286,7 @@
         font-size: 18px;
         font-weight: 600;
         line-height: 24px;
-        color: $text-color;
+        color: var(--fx-color-text);
         margin: 0;
       }
       > p {
@@ -296,25 +296,25 @@
         margin: 0;
         button {
           padding: 7px 13px !important;
-          border: 1px solid $primary !important;
-          color: #fff;
+          border: 1px solid var(--fx-color-primary) !important;
+          color: var(--fx-color-white);
           text-decoration: none;
           font-size: 14px;
           font-weight: 500;
           line-height: 20px;
           margin: 0 0 0 15px !important;
-          background: $primary;
+          background: var(--fx-color-primary);
           border-radius: 8px;
           &:hover {
-            background-color: $primary-hover !important;
-            border: 1px solid $primary-hover !important;
+            background-color: var(--fx-color-primary-hover) !important;
+            border: 1px solid var(--fx-color-primary-hover) !important;
           }
           &.btn-outline-primary {
-            background: #fff !important;
-            border-color: #d1d5db !important;
-            color: $light-dark;
+            background: var(--fx-color-white) !important;
+            border-color: var(--fx-color-mischka) !important;
+            color: var(--fx-color-light-dark);
             &:hover {
-              background-color: $concrete !important;
+              background-color: var(--fx-color-concrete) !important;
             }
           }
         }

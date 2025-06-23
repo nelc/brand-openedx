@@ -231,10 +231,6 @@
       font-weight: 500 !important;
       color: var(--fx-color-text);
       margin-right: 25px;
-      &:dir(rtl){
-        margin-right: unset;
-        margin-left: 25px;
-      }
       &:hover,
       &.active {
         border-bottom: 2px solid var(--fx-color-primary) !important;

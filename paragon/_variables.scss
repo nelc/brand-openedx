@@ -2,7 +2,7 @@
 // See _variables.scss in https://github.com/openedx/paragon/blob/master/scss/core/ for reference
 
 $primary: #4600c7;
-$primary-light: #F2F7F8;
+$primary-light: #f2f7f8;
 $light-dark: #374151;
 $text-color: #111827;
 $text-color-primary: #515661;
@@ -10,18 +10,37 @@ $primary-hover: #6a32d1;
 $concrete: #f3f3f3;
 $white: #ffffff;
 $danger: #b91c1c;
-$link-color: #006DAA;
+$link-color: #006daa;
 $chathams-blue: #15376d;
-$gray-chateau:#9ca3af;
+$gray-chateau: #9ca3af;
 $jewel: #178253;
 $gray-color: #8f8f8f;
 $shark: #1d1d1f;
 $gallery: #eeeeee;
 $river-red: #4b5563;
-$athens-gray:#e5e7eb;
+$athens-gray: #e5e7eb;
 $french-gray: #bbbbbc;
+$mischka: #d1d5db;
+$watercourse: #065f46;
+$scandal: #d1fae5;
+$fantasy:#fbf2f3;
+$ebb :#f0eeed;
+$rock-blue:#a7b6d2;
+$black-color:#000;
+$buttery-white:#fffbeb;
+$alabaster: #FBFBFB;
+$mystic: #ECF0F4;
+$ghost: #c4c7cf;
+$vesuvius:#b45309;
+$boulder: #767676;
+$provincial-pink:#fef2f2;
+$alto:#d3d3d3;
+$scorpion: #575757;
+$nelc-fx-font-family: "IBM Plex Sans Arabic", "Inter", sans-serif;
+
 
 :root {
+  --fx-font-family: #{$nelc-fx-font-family};
   --fx-color-primary: #{$primary};
   --fx-color-primary-light: #{$primary-light};
   --fx-color-light-dark: #{$light-dark};
@@ -41,10 +60,26 @@ $french-gray: #bbbbbc;
   --fx-color-river-red: #{$river-red};
   --fx-color-athens-gray: #{$athens-gray};
   --fx-color-french-gray: #{$french-gray};
+  --fx-color-mischka: #{$mischka};
+  --fx-color-watercourse: #{$watercourse};
+  --fx-color-scandal: #{$scandal};
+  --fx-color-fantasy: #{$fantasy};
+  --fx-color-ebb: #{$ebb};
+  --fx-color-rock-blue: #{$rock-blue};
+  --fx-color-black-color: #{$black-color};
+  --fx-color-buttery-white: #{$buttery-white};
+  --fx-color-alabaster: #{$alabaster};
+  --fx-color-mystic: #{$mystic};
+  --fx-color-ghost: #{$ghost};
+  --fx-color-vesuvius: #{$vesuvius};
+  --fx-color-boulder: #{$boulder};
+  --fx-color-provincial-pink: #{$provincial-pink};
+  --fx-color-alto: #{$alto};
+  --fx-color-scorpion: #{$scorpion};
 }
 
 
 // for toggle theme button
-$page-color-transition: transparent .2s ease, color .2s ease;
+$page-color-transition: transparent 0.2s ease, color 0.2s ease;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");

@@ -5,29 +5,29 @@ div[role="heading"].h2 + .list-unstyled.m-0.mt-4.pt-2 {
       .dates-line-bottom {
         left: 15px;
         top: 10px;
-        border-left: 2px solid #d1d5db !important;
+        border-left: 2px solid var(--fx-color-mischka) !important;
       }
       .dates-dot {
         width: 32px;
         height: 32px;
-        background: #fff;
+        background: var(--fx-color-var(--fx-color-white));
         left: 0;
         top: 0;
         &.border {
-          border: 2px solid #d1d5db !important;
+          border: 2px solid var(--fx-color-mischka) !important;
           &.border-gray-900 {
-            background: white !important;
-            border: 2px solid #d1d5db !important;
+            background: var(--fx-color-white) !important;
+            border: 2px solid var(--fx-color-mischka) !important;
           }
           &.bg-warning-300 {
-            border: 2px solid $primary !important;
-            background: white !important;
+            border: 2px solid var(--fx-color-primary) !important;
+            background: var(--fx-color-white) !important;
             &:after {
               position: absolute;
               left: 50%;
               top: 50%;
               content: "";
-              background: $primary;
+              background: var(--fx-color-primary);
               border-radius: 50%;
               width: 10px;
               height: 10px;
@@ -40,7 +40,7 @@ div[role="heading"].h2 + .list-unstyled.m-0.mt-4.pt-2 {
         padding: 0 0 0 48px !important;
         margin: 0 !important;
         .row.w-100.m-0.mb-1.align-items-center{
-            color: $text-color;
+            color: var(--fx-color-text);
             font-size: 12px;
             font-weight: 600;
         }
@@ -55,7 +55,7 @@ div[role="heading"].h2 + .list-unstyled.m-0.mt-4.pt-2 {
             font-weight: normal !important;
             font-size: 14px;
             line-height: 20px;
-            color: $text-color-primary;
+            color: var(--fx-color-text-primary);
           }
         }
         .badge.badge-primary {
@@ -67,8 +67,8 @@ div[role="heading"].h2 + .list-unstyled.m-0.mt-4.pt-2 {
           padding: 2px 10px;
           margin: 10px 0 10px 43px !important;
           text-transform: capitalize;
-          background: #d1fae5 !important;
-          color: #065f46;
+          background: var(--fx-color-scandal) !important;
+          color: var(--fx-color-watercourse);
           border-radius: 12px;
         }
       }
@@ -76,20 +76,20 @@ div[role="heading"].h2 + .list-unstyled.m-0.mt-4.pt-2 {
     &:first-child {
       &.dates-day.pb-4 {
         .dates-line-bottom {
-          border-color: $primary !important;
+          border-color: var(--fx-color-primary) !important;
         }
         .dates-dot {
           &.border {
             &.border-gray-900 {
-              background: $primary !important;
-              border: 2px solid $primary !important;
+              background: var(--fx-color-primary) !important;
+              border: 2px solid var(--fx-color-primary) !important;
               &:before {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 width: 10px;
                 height: 5px;
-                border: 1px solid white;
+                border: 1px solid var(--fx-color-white);
                 border-width: 0 0 2px 2px;
                 content: "";
                 transform: rotate(-45deg);
@@ -97,8 +97,8 @@ div[role="heading"].h2 + .list-unstyled.m-0.mt-4.pt-2 {
               }
             }
             &.bg-warning-300 {
-              border: 2px solid $primary !important;
-              background: white !important;
+              border: 2px solid var(--fx-color-primary) !important;
+              background: var(--fx-color-white) !important;
               &:before {
                 display: none !important;
               }
@@ -112,15 +112,15 @@ div[role="heading"].h2 + .list-unstyled.m-0.mt-4.pt-2 {
         .dates-dot {
           &.border {
             &.border-gray-900 {
-              background: $primary !important;
-              border: 2px solid $primary !important;
+              background: var(--fx-color-primary) !important;
+              border: 2px solid var(--fx-color-primary) !important;
               &:before {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 width: 10px;
                 height: 5px;
-                border: 1px solid white;
+                border: 1px solid var(--fx-color-white);
                 border-width: 0 0 1px 1px;
                 content: "";
                 transform: rotate(-45deg);
@@ -128,8 +128,8 @@ div[role="heading"].h2 + .list-unstyled.m-0.mt-4.pt-2 {
               }
             }
             &.bg-warning-300 {
-              border: 3px solid $primary !important;
-              background: white !important;
+              border: 3px solid var(--fx-color-primary) !important;
+              background: var(--fx-color-white) !important;
               &:before {
                 display: none !important;
               }
@@ -139,7 +139,7 @@ div[role="heading"].h2 + .list-unstyled.m-0.mt-4.pt-2 {
       }
     }
     .small.mb-2 {
-      background: $primary-light;
+      background: var(--fx-color-primary-light);
       border-radius: 6px;
       padding: 16px;
       margin: 18px 0 0 0;
@@ -151,5 +151,5 @@ div[role="heading"].h2 + .list-unstyled.m-0.mt-4.pt-2 {
 }
 
 .h2 {
-  color: $text-color;
+  color: var(--fx-color-text);
 }
