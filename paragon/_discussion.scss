@@ -22,7 +22,7 @@
   padding: 0 15px;
   box-shadow: none;
   position: static;
-  z-index: 100 !important;
+  z-index: 3 !important;
   .navbar {
     padding: 0 0 32px;
     @include media-breakpoint-down(sm) {
@@ -386,7 +386,8 @@ input {
   width: 30px !important;
   padding: 5px;
   margin: 0 !important;
-  height: 20px !important;
+  height: 30px !important;
+  margin-right: 5px;
   svg {
     color: var(--fx-color-text);
     path {
@@ -558,4 +559,8 @@ body.indigo-dark-theme {
   .card.post-form .submitButton {
     color: var(--fx-color-shark) !important;
   }
+}
+
+.bg-light-grey.bg-light-grey{
+background-color: var(--fx-color-concrete) !important;
 }
