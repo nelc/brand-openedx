@@ -368,10 +368,6 @@
       background-color: var(--fx-color-primary-hover) !important;
       border-color: var(--fx-color-primary-hover) !important;
     }
-    &:dir(rtl) {
-      margin-right: unset !important;
-      margin-left: 20px !important;
-    }
   }
 }
 body.indigo-dark-theme #root .layout {
