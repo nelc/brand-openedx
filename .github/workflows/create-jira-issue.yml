@@ -4,7 +4,6 @@ on:
   pull_request:
     types:
       - closed
-      - synchronize  # Delete after testing and delete || github.event.action == 'synchronize'
 
 jobs:
   prepare:
@@ -18,8 +17,8 @@ jobs:
       - run: echo "Preparing input vars..."
   create-jira-issue:
     needs: prepare
-    if: github.event.pull_request.merged == true || github.event.action == 'synchronize'
-    uses: nelc/actions-hub/.github/workflows/create-jira-issue.yml@and/jira_automation_action
+    if: github.event.pull_request.merged == true
+    uses: nelc/actions-hub/.github/workflows/create-jira-issue.yml@main
     with:
       story_summary: ${{ needs.prepare.outputs.story_summary }}
       story_description: ${{ needs.prepare.outputs.story_description }}
