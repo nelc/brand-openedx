@@ -1,13 +1,7 @@
 // Add any font imports or definitions here
 
-@font-face {
-  font-family: 'DIN Next LT Arabic';
-  src: url('./fonts/din-next-lt-arabic-bold.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-  --pgn-typography-font-family-base: 'DIN Next LT Arabic',var(--pgn-typography-font-family-sans-serif) !important;
+  --pgn-typography-font-family-base: 'IBM Plex Sans Arabic',var(--pgn-typography-font-family-sans-serif) !important;
 }
